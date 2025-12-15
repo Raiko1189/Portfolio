@@ -56,8 +56,7 @@ Personal-Portfolio/
 
 
 ## live
-this is a direct to link to my portfolio
-portfolio-six-ruby-88.vercel.app
+[this is a direct to link to my portfolio] (portfolio-six-ruby-88.vercel.app)
 ---
 
 ## 📌 Future Improvements
