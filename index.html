@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0851d08b32.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/Raiko.jpg" class="logo" height="100" >
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                
+            </ul>
+            
+        </nav>
+        <div class="header-text"><p>Backend Developer </p>
+        <h1>Hi , I'm <span>Reiko(u can call me Raiko).</span><br>
+            Student at Adama Science And<br> Technology University</h1></div>
+    </div>
+</div>
+<!-- ABOUT SECTION -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+
+            <!-- Left Column -->
+            <div class="about-col-1">
+                <img src="images/IMG_7934.jpg" width="300" height="550" alt="Raiko photo">
+            </div>
+
+            <!-- Right Column -->
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+
+                <p>
+                    I am a third-year senior student at Adama Science and Technology University
+                    with a strong interest in full-stack web development.
+                    I specialize in front-end development using React with Vite, HTML, and CSS,
+                    focusing on building responsive, user-friendly interfaces.
+                    On the back end, I work with Python and the FastAPI framework to develop
+                    efficient, scalable APIs and server-side applications.
+                    I enjoy creating complete web solutions by combining clean UI design with
+                    well-structured backend logic.
+                </p>
+
+                <!-- Tabs -->
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab(event, 'skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab(event, 'experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab(event, 'education')">Education</p>
+                </div>
+
+                <!-- Tab Contents -->
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li>
+                            <span>Backend Development</span><br>
+                            Python with FastAPI framework
+                        </li>
+                        <li>
+                            <span>Frontend Development</span><br>
+                            React + Vite, HTML, CSS
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li>
+                            <span>Summer Internship – Startup Pagile</span><br>
+                            Backend development using FastAPI
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li>
+                            <span>2016 – Present</span><br>
+                            Bachelor Degree at ASTU
+                        </li>
+                        <li>
+                            <span>2025</span><br>
+                            Learned FastAPI from official documentation
+                        </li>
+                        <li>
+                            <span>2025</span><br>
+                            Learned HTML and CSS from Udacity
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Ecommerce Web Design</h2>
+                <p>this is frontend i worked for shoe E-commerce</p>
+                <a href="#">Learn more</a>
+            </div>
+             <div>
+                <i class="fa-solid fa-crop"></i>
+                <h2>To-do list </h2>
+                <p>full-stack website using fastapi and react+vite</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>
+                <h2>Quiz Web </h2>
+                <p>A web-based quiz application developed using FastAPI that provides a robust and efficient backend for managing quiz questions, handling user submissions, and calculating scores in real time. The application is designed with clean API architecture, ensuring fast performance, scalability, and seamless integration with a front-end interface.</p>
+                <a href="#">Learn more</a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+<!--------portfolio--------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+    </div>
+    <div class="work-list">
+        <div class="work">
+            <img src="images/todo.jpg" height="535">
+            <div class="layer">
+                <h3>to-do list app</h3>
+                <p>A task management web application built with FastAPI, enabling users to create, update, and delete to-do items through a fast and scalable backend API.</p>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/quiz.jpg">
+            <div class="layer">
+                <h3>quiz web</h3>
+                <p>A task management web application built with FastAPI, enabling users to create, update, and delete to-do items through a fast and scalable backend API.</p>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+        <div class="work">
+            <img src="images/shoe.jpg" height="535">
+            <div class="layer">
+                <h3>shoe commerce</h3>
+                <p>A task management web application built with FastAPI, enabling users to create, update, and delete to-do items through a fast and scalable backend API.</p>
+                <a href=""><i class="fa-solid fa-link"></i></a>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="btn">see more</a>
+</div>
+<!-- contact -->
+ <div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">contact me</h1>
+                <p><i class="fa-regular fa-paper-plane"></i>reikowak123@gmail.com</p>
+                <p><i class="fa-solid fa-mobile"></i>0996829518</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/reiko-wakbeka-33882a349/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://t.me/Raiko4589"><i class="fa-brands fa-telegram"></i></a>
+
+                </div>
+            </div>
+            <div class="contact-right">
+                <form action="">
+                    <input type="text" name="Name" placeholder="your Name" required>
+                    <input type="email" name="email" placeholder="your Email" required>
+                    <textarea type="Message" rows="6" placeholder="your Message" ></textarea>
+                    <button type="submit" class ="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+ </div>
+
+<!-- JAVASCRIPT -->
+<script>
+    const tablinks = document.getElementsByClassName("tab-links");
+    const tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(event, tabname) {
+        for (let tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+
+        for (let tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+</body>
+</html>
