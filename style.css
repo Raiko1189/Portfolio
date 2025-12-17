@@ -316,6 +316,96 @@ form input,form textarea{
     cursor: pointer;
 }
 
-nav .fa{
+nav .fa-solid{
     display:none;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    background: #262626;
+    font-weight: 300;
+    margin-top: 20px;
+}
+.copyright p i{
+    color:#ff004f;
+}
+@media only screen and (max-width: 600px) {
+
+    #header {
+        background-image: url(images/I2.png);
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .header-text {
+        margin-top: 130px;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .header-text h1 {
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+     #about {
+        padding: 40px 20px;
+    }
+    .about-col-2 p {
+        margin-top: 30px;
+    }
+
+
+    .about-col-1 img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .about-col-2 p {
+        font-size: 16px;
+        line-height: 1.6;
+    }
+
+    .sub-title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    nav .fa-solid {
+        display: block;
+        font-size: 25px;
+    }
+
+    nav ul {
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+
+    nav ul .fa-solid {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
 }

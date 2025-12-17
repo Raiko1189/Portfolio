@@ -19,8 +19,10 @@
                 <li><a href="#services">Services</a></li>
                 <li><a href="#portfolio">Portfolio</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-x" onclick="closemenu()"></i>
                 
             </ul>
+            <i class="fa-solid fa-bars " onclick="openmenu()"></i>
             
         </nav>
         <div class="header-text"><p>Backend Developer </p>
@@ -188,6 +190,7 @@
             </div>
         </div>
     </div>
+    <div class="copyright"><p><i class="fa-regular fa-copyright"></i>2025 Reiko.all right Reserved<i class="fa-solid fa-heart"></i></p></div>
  </div>
 
 <!-- JAVASCRIPT -->
@@ -206,6 +209,17 @@
 
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+    function openmenu(){
+        sidemeu.style.right="0";
+
+    }
+    function closemenu(){
+        sidemeu.style.right="-200px";
+        
     }
 </script>
 </body>
